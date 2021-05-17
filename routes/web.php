@@ -13,4 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'MovieController@index');
+Route::get('/movie/', 'MovieController@index');
+Route::get('/movie/{id}', 'MovieController@show');
+Route::get('/', 'MovieController@home');
+
+
+
+// Queste 2 rotte, con laravel le uniamo in un'unica route:
+// Route::resource('movies', 'MovieController');
+

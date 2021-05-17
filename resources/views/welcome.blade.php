@@ -14,8 +14,10 @@
         <h1>HELLO WORLD</h1>
         @foreach ($movies as $movie)
             <li>
-                <h2>  {{$movie->title }} </h2> 
-                <p>
+                <h2> 
+                    {{$movie->title }} 
+                </h2> 
+                <p> 
                     Autore:
                     {{$movie ->author }}
                 </p>
